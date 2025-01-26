@@ -10,7 +10,7 @@ namespace first_app.Data
         {
         }
 
-        public DbSet<ProductViewModel> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
         // Add other DbSet properties for your models here
     }
 }

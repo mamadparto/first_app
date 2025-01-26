@@ -49,7 +49,7 @@ namespace MyWebApp.Controllers
         // POST: Products/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,Description")] ProductViewModel product)
+        public async Task<IActionResult> Create([Bind("Id,Name,Price,Description")] Product product)
         {
             if (ModelState.IsValid)
             {

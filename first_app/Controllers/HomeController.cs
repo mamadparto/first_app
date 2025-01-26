@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using first_app.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace first_app.Controllers
@@ -12,7 +13,6 @@ namespace first_app.Controllers
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
             return View();
